@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>React Session</title>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+body{
+color:white;
+}
+
+.column {
+	  float: left;
+	  width: 75%;
+	  padding: 10px;
+	  height: 800px; 
+	}
+img {
+	  border-radius: 50%;
+	  height:200px;
+	  position:inherit;
+	}
+.profile{
+	text-align:center;
+	line-height:1px;
+	}
+.align{
+font-size: 20px;
+margin-top:20px;
+
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #4d5156;
+  text-align: center;
+  padding-left: 0px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color:rgb(155, 196, 226);
+  height:50px;
+  width:25%
+ }
+#col{
+	 float: left;
+	  width: 25%;
+	  padding: 10px;
+	  height:800px; 
+	}
+
+</style>
+<body>
+<div id="root" ></div>
+<script type="text/babel" >
+
+
+
+ const App=()=>{
+     return(
+       <div>
+	<div className="row">
+<div className="column" id="col" style={{backgroundColor:"#00bfff"}}>
+<div className="profile">
+<img src="image6.jpg" alt="Avatar" style={{width:"200px"}}/>
+<h3 className="align">DURGADEVI. N</h3>
+<p className="align"><i className="fa fa-phone" style={{fontSize:"24px",color:"black"}}></i> 8110018723</p>
+<p style={{fontSize:"20px",paddingTop:"20px",paddingBottom:"20px"}}><i className="fa fa-envelope" style={{fontSize:"24px",color:"black"}}></i> durgadeviece98@gmail.com</p>
+<a href ="https://github.com/Durgadevi23" style={{fontSize:"20px"}}><i className="fa fa-github" style={{fontSize:"24px",color:"black"}}></i> github.com/Durgadevi23</a>	  
+</div>
+</div>
+<div className="column" style={{backgroundColor:"#0000ff"}}>	
+<div className="topnav">
+  <a href="portfolio.html">ABOUT</a>
+  <a href="education.html">QUALIFICATION</a>
+  <a href="skills.html">ACTIVITIES</a>
+  <a href="personnal.html">PERSONAL TRAITS</a>
+ </div>
+ <hr/>
+ <div>
+ <h3 style={{paddingLeft:"10px",paddingTop:"50px"}}>CAREER OBJECTIVE</h3>
+ <p style={{paddingLeft:"20px",fontSize:"20px"}}>To be a part of an organization where get a chance to use my knowledge and skills to contribute in the progress of the organization as well as myself.</p>
+</div>
+<div>
+<h3>ACCOMPLISHMENTS</h3>
+<ul style={{fontSize:"20px"}}>
+<li>Participated in <b>INDIAN ENGINEERING OLYMPIAD(IEO)</b> exam</li>
+<li>Coordinated magazine released event in college</li>
+<li>Participated<b>TECHNOVISION'18</b>event and won prize on <b>GUM BOWLED</b> event</li>
+<li>Secured <b>School Second</b> in SSLC Exam and HSC Exam</li>
+<li>Completed <b>Prathamic Madhyama</b> exam in Hindi</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+  );
+};
+   ReactDOM.render(<App />,document.getElementById("root"))
+    </script>
+</body>
+</html>
