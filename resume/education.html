@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>React Session</title>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+body{
+color:white;
+}
+#col{
+	 float: left;
+	  width: 25%;
+	  padding: 10px;
+	  height:800px; 
+	}
+.column {
+	  float: left;
+	  width: 75%;
+	  padding: 10px;
+	  height: 800px; 
+	}
+img {
+	  border-radius: 50%;
+	  height:200px;
+	  position:inherit;
+	}
+.profile{
+	text-align:center;
+	line-height:1px;
+	}
+.align{
+font-size: 20px;
+color: inherit; 
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #4d5156;
+  text-align: center;
+  padding-left: 30px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color:rgb(155, 196, 226);
+  height:50px;
+  width:25%
+ }
+ .size{
+ font-size:20px;
+ 
+ }
+ button{
+ width:150px;
+left:200px;
+ }
+
+
+
+</style>
+<body>
+<div id="root" ></div>
+<script type="text/babel" >
+
+
+
+ const App=()=>{
+     return(
+       <div>
+	<div className="row">
+<div className="column" id="col" style={{backgroundColor:"#00bfff"}}>
+<div className="profile">
+<img src="image6.jpg" alt="Avatar" style={{width:"200px"}}/>
+<h3 className="align">DURGADEVI. N</h3>
+<p className="align"><i className="fa fa-phone" style={{fontSize:"24px",color:"black"}}></i> 8110018723</p>
+<p style={{fontSize:"20px",paddingTop:"20px",paddingBottom:"20px"}}><i className="fa fa-envelope" style={{fontSize:"24px",color:"black"}}></i> durgadeviece98@gmail.com</p>
+<a href ="https://github.com/Durgadevi23" style={{fontSize:"20px"}}><i className="fa fa-github" style={{fontSize:"24px",color:"black"}}></i> github.com/Durgadevi23</a>	  
+</div>
+</div>
+<div className="column" style={{backgroundColor:"#0000ff"}}>	
+<div className="topnav">
+  <a href="profile_react.html">ABOUT</a>
+  <a href="educ.html">QUALIFICATION</a>
+  <a href="skills.html">ACTIVITIES</a>
+  <a href="personal.html">PERSONAL TRAITS</a>
+ </div>
+ <div className="size">
+ <h3 style={{paddingTop:"80px"}}>EDUCATION QUALIFICATION</h3>
+ <ul style={{listStyle: "none"}}>
+<li><i className="fa fa-graduation-cap" style={{color:"black"}}></i>  Completed my Bachelor of Engineering in IFET College of Engineering with <b>7.8 CGPA</b></li>
+ <li><i className="fas fa-medal" style={{fontSize:"25px",color:"gold"}}></i> Completed my Higher secondaries in Government Higher Secondary School with <b>89%</b></li>
+ <li><i className="fas fa-medal" style={{fontSize:"25px",color:"gold"}}></i> Completed my Secondary School in Government Higher Secondary School with <b>96%</b></li>	
+ </ul>
+ <h3>TECHNICAL SKILLS</h3>
+ <button>C</button> <button>C++</button> <button>Python</button>
+ <button>Javascript</button> <button>Node JS</button>
+ <button>HTML</button> <button>CSS</button>
+ </div>
+</div>
+</div>
+
+</div>
+  );
+};
+   ReactDOM.render(<App />,document.getElementById("root"))
+    </script>
+</body>
+</html>
